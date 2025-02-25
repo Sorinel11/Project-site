@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+.container{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+   
+
+.site-header {
+    background: #007BFF;
+    color: white;
+}
+
+.testimonial {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrează conținutul pe orizontală */
+    gap: 10px;
+    width:500px;
+}
+
+.left img, .right img {
+    width: 100%; /* Ajustează imaginea să ocupe toată lățimea div-ului */
+    max-width: 240px; /* Poți modifica dimensiunea */
+    height: auto;
+    border-radius: 10%;
+    border:solid white;
+}
+button{
+    border-radius: 20%;
+    background: #007BFF;
+    
+}
+
+.site-footer {
+    background: #222;
+    color: white;
+    padding: 10px;
+    margin-top: auto;
+}
+.color{
+    color:hwb(210 1% 91%);
+    border-radius: 20%;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    border: solid;
+    padding: 10px;
+}
+@media (max-width: 768px) {
+    .container {
+        max-width: 95%;
+    }
+    .testimonial{
+        flex-direction: column;
+        align-items: center;
+    }
+}
